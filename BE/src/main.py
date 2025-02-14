@@ -14,6 +14,10 @@ init_db()
 # FastAPI 인스턴스 생성
 app = FastAPI()
 
+
+# Instrumentator를 FastAPI 앱에 등록
+Instrumentator().instrument(app).expose(app)
+
 # CORS 설정 수정
 app.add_middleware(
     CORSMiddleware,

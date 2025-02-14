@@ -16,3 +16,4 @@ pymysql
 mysqlclient
 flake8 # 린트 도구
 pytest
+prometheus-fastapi-instrumentator
