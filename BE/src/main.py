@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from routers.route import router
 from db.database import init_db
 import os
+from prometheus_fastapi_instrumentator import Instrumentator
 
 # 환경변수 로드
 load_dotenv(os.getenv("ENV_FILE",".env"))
